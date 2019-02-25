@@ -1,0 +1,193 @@
+﻿
+.center img {
+    height: 100%;
+    width: 100%;
+}
+
+.buttonLogin, .loginFonte {
+    text-transform: uppercase;
+}
+
+.buttonLogin {
+    font-family: Ubuntu-Bold;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 62px;
+    background-color: #00f;
+    border-radius: 3px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+
+.inputLogin, .loginFonte {
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+}
+
+.buttonLogin:hover {
+    background-color: #403866;
+}
+
+.buttonLogin:focus {
+    background-color: #04B404;
+}
+
+
+
+
+@media screen and (min-width:320px) {
+    .centralizar {
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .loginFonte {
+        font-family: arial;
+        font-size: 22px;
+        font-weight: 700;
+        color: red;
+        text-align: center;
+    }
+
+    .inputLogin {
+        font-family: Ubuntu-Bold;
+        color: #403866;
+        font-size: 14px;
+        background-color: #e6e6e6;
+        height: 50px;
+        padding: 0 10px 0 28px;
+    }
+}
+
+@media screen and (min-width:480px) {
+    .centralizar {
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .loginFonte {
+        font-family: arial;
+        font-size: 22px;
+        font-weight: 700;
+        color: red;
+        text-align: center;
+    }
+
+    .inputLogin {
+        font-family: Ubuntu-Bold;
+        color: #403866;
+        font-size: 14px;
+        background-color: #e6e6e6;
+        height: 50px;
+        padding: 0 10px 0 28px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .centralizar {
+        margin: 0 auto;
+        width: 350px;
+    }
+
+    .loginFonte {
+        font-family: arial;
+        font-size: 27px;
+        font-weight: 700;
+        color: red;
+        text-align: center;
+    }
+
+    .inputLogin {
+        font-family: Ubuntu-Bold;
+        color: #403866;
+        font-size: 18px;
+        background-color: #e6e6e6;
+        height: 60px;
+        padding: 0 20px 0 38px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .centralizar {
+        margin: 0 auto;
+        width: 400px;
+    }
+
+    .loginFonte {
+        font-family: arial;
+        font-size: 32px;
+        font-weight: 700;
+        color: red;
+        text-align: center;
+    }
+
+    .inputLogin {
+        font-family: Ubuntu-Bold;
+        color: #403866;
+        font-size: 18px;
+        background-color: #e6e6e6;
+        height: 60px;
+        padding: 0 20px 0 38px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .centralizar {
+        margin: 0 auto;
+        width: 400px;
+    }
+
+    .loginFonte {
+        font-family: arial;
+        font-size: 32px;
+        font-weight: 700;
+        color: red;
+        text-align: center;
+    }
+
+    .inputLogin {
+        font-family: Ubuntu-Bold;
+        color: #403866;
+        font-size: 18px;
+        background-color: #e6e6e6;
+        height: 60px;
+        padding: 0 20px 0 38px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .centralizar {
+        margin: 0 auto;
+        width: 400px;
+    }
+
+    .loginFonte {
+        font-family: arial;
+        font-size: 32px;
+        font-weight: 700;
+        color: red;
+        text-align: center;
+    }
+
+    .inputLogin {
+        font-family: Ubuntu-Bold;
+        color: #403866;
+        font-size: 18px;
+        background-color: #e6e6e6;
+        height: 60px;
+        padding: 0 20px 0 38px;
+    }
+}

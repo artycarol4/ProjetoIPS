@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fundo_fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LaudoSvMain"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="57dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LaudoLlEvidencia"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilEvidencia1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="94dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintEvidencia01"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtEvidencia1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-94dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/black_12" />
+
+                            <LinearLayout
+                                android:layout_width="43dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="0dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="vertical">
+
+                                <nadlertec.com.br.ips.setting.switchicon.SwitchIconView
+                                    android:id="@+id/LaudoSivEvidencia1Foto"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="0dp"
+                                    app:si_disabled_color="@color/item_selecionado_menu"
+                                    app:si_enabled="true"
+                                    app:si_no_dash="false"
+                                    app:si_tint_color="@color/entradaTexto"
+                                    app:srcCompat="@drawable/ico_foto" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txtCAMERA"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/black_12" />
+
+                            <LinearLayout
+                                android:layout_width="46dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="0dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="vertical">
+
+                                <nadlertec.com.br.ips.setting.switchicon.SwitchIconView
+                                    android:id="@+id/LaudoSivEvidencia1Galeria"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="0dp"
+                                    app:si_disabled_color="@color/item_selecionado_menu"
+                                    app:si_enabled="true"
+                                    app:si_no_dash="false"
+                                    app:si_tint_color="@color/entradaTexto"
+                                    app:srcCompat="@drawable/ico_galeria" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txtFOTO"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilEvidencia2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="94dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintEvidencia02"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtEvidencia2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-94dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/black_12" />
+
+                            <LinearLayout
+                                android:layout_width="43dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="0dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="vertical">
+
+                                <nadlertec.com.br.ips.setting.switchicon.SwitchIconView
+                                    android:id="@+id/LaudoSivEvidencia2Foto"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="0dp"
+                                    app:si_disabled_color="@color/item_selecionado_menu"
+                                    app:si_enabled="true"
+                                    app:si_no_dash="false"
+                                    app:si_tint_color="@color/entradaTexto"
+                                    app:srcCompat="@drawable/ico_foto" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txtCAMERA"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/black_12" />
+
+                            <LinearLayout
+                                android:layout_width="46dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="0dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="vertical">
+
+                                <nadlertec.com.br.ips.setting.switchicon.SwitchIconView
+                                    android:id="@+id/LaudoSivEvidencia2Galeria"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="0dp"
+                                    app:si_disabled_color="@color/item_selecionado_menu"
+                                    app:si_enabled="true"
+                                    app:si_no_dash="false"
+                                    app:si_tint_color="@color/entradaTexto"
+                                    app:srcCompat="@drawable/ico_galeria" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txtFOTO"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilEvidencia3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="94dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintEvidencia03"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtEvidencia3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-94dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/black_12" />
+
+                            <LinearLayout
+                                android:layout_width="43dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="0dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="vertical">
+
+                                <nadlertec.com.br.ips.setting.switchicon.SwitchIconView
+                                    android:id="@+id/LaudoSivEvidencia3Foto"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="0dp"
+                                    app:si_disabled_color="@color/item_selecionado_menu"
+                                    app:si_enabled="true"
+                                    app:si_no_dash="false"
+                                    app:si_tint_color="@color/entradaTexto"
+                                    app:srcCompat="@drawable/ico_foto" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txtCAMERA"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/black_12" />
+
+                            <LinearLayout
+                                android:layout_width="46dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="0dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="vertical">
+
+                                <nadlertec.com.br.ips.setting.switchicon.SwitchIconView
+                                    android:id="@+id/LaudoSivEvidencia3Galeria"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="0dp"
+                                    app:si_disabled_color="@color/item_selecionado_menu"
+                                    app:si_enabled="true"
+                                    app:si_no_dash="false"
+                                    app:si_tint_color="@color/entradaTexto"
+                                    app:srcCompat="@drawable/ico_galeria" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txtFOTO"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilEvidencia4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="94dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintEvidencia04"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtEvidencia4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-94dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/black_12" />
+
+                            <LinearLayout
+                                android:layout_width="43dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="0dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="vertical">
+
+                                <nadlertec.com.br.ips.setting.switchicon.SwitchIconView
+                                    android:id="@+id/LaudoSivEvidencia4Foto"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="0dp"
+                                    app:si_disabled_color="@color/item_selecionado_menu"
+                                    app:si_enabled="true"
+                                    app:si_no_dash="false"
+                                    app:si_tint_color="@color/entradaTexto"
+                                    app:srcCompat="@drawable/ico_foto" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txtCAMERA"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/black_12" />
+
+                            <LinearLayout
+                                android:layout_width="46dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="0dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="vertical">
+
+                                <nadlertec.com.br.ips.setting.switchicon.SwitchIconView
+                                    android:id="@+id/LaudoSivEvidencia4Galeria"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="0dp"
+                                    app:si_disabled_color="@color/item_selecionado_menu"
+                                    app:si_enabled="true"
+                                    app:si_no_dash="false"
+                                    app:si_tint_color="@color/entradaTexto"
+                                    app:srcCompat="@drawable/ico_galeria" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txtFOTO"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LaudoLlPasso1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/fundo_edicao">
+
+                        <TextView
+                            android:id="@+id/LaudoTvTitAcessorio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/transparent"
+                            android:text="@string/hintAcessorio"
+                            android:textColor="@color/entradaTexto" />
+
+                        <Spinner
+                            android:id="@+id/LaudoSpiAcessorio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/transparent"
+                            android:gravity="left"
+                            android:singleLine="true" />
+
+                        <LinearLayout
+                            android:id="@+id/LaudoLlAcessorio"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/entradaTexto"
+                            android:orientation="vertical" />
+
+                        <TextView
+                            android:id="@+id/LaudoTvAcessorioErro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/mensagemErroCampoObrigatorio"
+                            android:textColor="@color/vermelhoerro"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilTAG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintTAG"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtTAG"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="32"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilFab"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintFabricante"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtFab"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="31"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilModelo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintModelo"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtModelo"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="32"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilCapacidade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintCapacidade"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtCapacidade"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="30"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilDimensao"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintDimensao"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtDimensao"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="30"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilObservacao"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintObservacao"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtObservacao"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="400"
+                                android:singleLine="false"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilContato"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintContato"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtContato"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="27"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilSetor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintSetor"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtSetor"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/fundo_edicao"
+                            android:orientation="vertical">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/LaudoTilDDD"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:colorControlNormal="@color/entradaTexto"
+                                android:hint="@string/hintDDD"
+                                android:textColorHint="@color/entradaTexto"
+                                app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                                app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                                <EditText
+                                    android:id="@+id/LaudoEtDDD"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    android:singleLine="true"
+                                    android:textColor="@color/entradaTexto" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/fundo_edicao"
+                            android:orientation="vertical">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/LaudoTilTelefone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:colorControlNormal="@color/entradaTexto"
+                                android:hint="@string/hintTelefone"
+                                android:textColorHint="@color/entradaTexto"
+                                app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                                app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                                <EditText
+                                    android:id="@+id/LaudoEtTelefone"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:singleLine="true"
+                                    android:textColor="@color/entradaTexto" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilObservacao2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintObservacao"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtObervacao2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="400"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilMetodologia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintMetodologia"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtMetodologia"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="top"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="400"
+                                android:minHeight="65dp"
+                                android:singleLine="false"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LaudoLlPasso2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilCertFabr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintCertificadoFabricante"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtCertFabr"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="20"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilRegInsp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintRegistroInspecao"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtRegInsp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="20"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilRegRep"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintRegistroReparo"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtRegRep"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="20"
+                                android:singleLine="true"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/LaudoTvConcTec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/transparent"
+                            android:text="@string/txtConclusaoTecnica"
+                            android:textColor="@color/entradaTexto" />
+
+                        <Spinner
+                            android:id="@+id/LaudoSpiConcTec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/transparent"
+                            android:gravity="left"
+                            android:singleLine="true" />
+
+                        <LinearLayout
+                            android:id="@+id/LaudoLlConcTec"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/entradaTexto"
+                            android:orientation="vertical" />
+
+                        <TextView
+                            android:id="@+id/LaudoTvConcTecErro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/mensagemErroCampoObrigatorio"
+                            android:textColor="@color/vermelhoerro"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/fundo_edicao">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/LaudoTilRecomendacao"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:colorControlNormal="@color/entradaTexto"
+                            android:hint="@string/hintRecomendacao"
+                            android:textColorHint="@color/entradaTexto"
+                            app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                            app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+                            <EditText
+                                android:id="@+id/LaudoEtRecomendacao"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="top"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="400"
+                                android:minHeight="50dp"
+                                android:singleLine="false"
+                                android:textColor="@color/entradaTexto" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LaudoLlMainGravar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="-57dp"
+                android:gravity="center_vertical|center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/LaudoLlGravar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/fundo_botao">
+
+                    <TextView
+                        android:id="@+id/LaudoTvTitGravar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/mensagemACESSAR"
+                        android:textColor="@color/branco"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

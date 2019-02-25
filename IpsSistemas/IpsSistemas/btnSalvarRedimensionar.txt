@@ -1,0 +1,684 @@
+ protected void btnSalvarEvidenciasFotograficas_Click(object sender, EventArgs e)
+        {
+            bool orientacao_bool = false;
+            int cont = 0;
+            bool ev1 = false, ev2 = false, ev3 = false, ev4 = false;
+            
+            lblVisibleFalse();
+
+            try
+            {
+
+                if (fupEvidenciaFotografica1.PostedFile == null || fupEvidenciaFotografica1.PostedFile.FileName == "")
+                {
+                    if (Session["sessiontxtEvidenciaFotografica01"] == "" || Session["sessiontxtEvidenciaFotografica01"] == null)
+                    {
+                        hfCaminhoevidenciafotograficaum_str.Value = "SEMIMAGEM01.JPG";
+
+                    }
+                    else
+                    {
+                        hfCaminhoevidenciafotograficaum_str.Value = (string)Session["sessiontxtEvidenciaFotografica01"];
+
+                    }
+
+
+
+                    lblConcluido01.Text = "";
+                    imagemconcluido01.Visible = true;
+                    imagemerro01.Visible = false;
+                }
+                else
+                {
+
+                    string fileExtention = fupEvidenciaFotografica1.PostedFile.ContentType;
+                    String sArqTemp = Path.GetTempPath() + fupEvidenciaFotografica1.FileName;
+                    fupEvidenciaFotografica1.SaveAs(sArqTemp);
+
+                    orientacao_bool = Orientacao(sArqTemp);
+
+                    if (orientacao_bool)
+                    {
+
+
+
+                        objOrdemServicoClasse.Caminhoevidenciafotograficaum_str = Path.GetFileNameWithoutExtension(fupEvidenciaFotografica1.PostedFile.FileName);
+
+                        HttpPostedFile pf = fupEvidenciaFotografica1.PostedFile;
+                        System.Drawing.Image bm = System.Drawing.Image.FromStream(pf.InputStream);
+
+                        String intArqLargura = bm.PhysicalDimension.Width.ToString(); // largura original
+                        String intArqAltura = bm.PhysicalDimension.Height.ToString(); // altura original
+
+
+                        if (fileExtention == "image/png")
+                        {
+
+
+                            //1mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (1000 * 1024) && fupEvidenciaFotografica1.PostedFile.ContentLength < (1999 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 50) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 50) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+                                
+                                
+                            }
+
+                            //2mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (2000 * 1024) && fupEvidenciaFotografica1.PostedFile.ContentLength < (2999 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 40) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 40) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+
+                                
+                                
+                            }
+
+                            //3mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (3000 * 1024) && fupEvidenciaFotografica1.PostedFile.ContentLength < (3999 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 35) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 35) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+
+                                
+                                
+                            }
+
+
+                            //4mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (4000 * 1024) && fupEvidenciaFotografica1.PostedFile.ContentLength < (4999 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 30) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 30) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+
+                                
+                                
+                            }
+
+                            //5mb ou mais
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (5000 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 25) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 25) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+
+                                
+                                
+                            }
+
+
+                        }
+
+                //////////////////////////////////JPEG//////////////////////////////
+                        else if (fileExtention == "image/jpeg")
+                        {
+                            //1mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (1000 * 1024) && fupEvidenciaFotografica1.PostedFile.ContentLength < (1999 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 50) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 50) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+                                
+                                
+                            }
+
+                            //2mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (2000 * 1024) && fupEvidenciaFotografica1.PostedFile.ContentLength < (2999 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 40) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 40) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+
+                                
+                                
+                            }
+
+                            //3mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (3000 * 1024) && fupEvidenciaFotografica1.PostedFile.ContentLength < (3999 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 35) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 35) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+
+                                
+                                
+                            }
+
+
+                            //4mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (4000 * 1024) && fupEvidenciaFotografica1.PostedFile.ContentLength < (4999 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 30) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 30) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+
+                                
+                                
+                            }
+
+                            //5mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (5000 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 25) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 25) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+
+                                
+                                
+                            }
+
+                        }
+
+                        //////////////////////////////////BMP//////////////////////////////
+                        else if (fileExtention == "image/bmp")
+                        {
+
+                            //1mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (1000 * 1024) && fupEvidenciaFotografica1.PostedFile.ContentLength < (1999 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 50) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 50) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+                                
+                                
+                            }
+
+                            //2mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (2000 * 1024) && fupEvidenciaFotografica1.PostedFile.ContentLength < (2999 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 40) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 40) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+
+                                
+                                
+                            }
+
+                            //3mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (3000 * 1024) && fupEvidenciaFotografica1.PostedFile.ContentLength < (3999 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 35) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 35) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+
+                                
+                                
+                            }
+
+
+                            //4mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (4000 * 1024) && fupEvidenciaFotografica1.PostedFile.ContentLength < (4999 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 30) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 30) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+
+                                
+                                
+                            }
+
+                            //5mb
+                            if (fupEvidenciaFotografica1.PostedFile.ContentLength > (5000 * 1024))
+                            {
+                                int resultLargura = (Convert.ToInt32(intArqLargura) * 25) / 100;
+                                int resultAltura = (Convert.ToInt32(intArqAltura) * 25) / 100;
+
+
+                                bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                       
+                                bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+
+                                
+                                
+                            }
+                        }
+
+
+
+
+
+
+
+
+
+
+
+
+                        //int resultLargura = (Convert.ToInt32(intArqLargura) * 50) / 100;
+                        //int resultAltura = (Convert.ToInt32(intArqAltura) * 50) / 100;
+
+
+                        //bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height       
+                        //bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+                        
+                        //Salva o arquivo no disco
+                       // fupEvidenciaFotografica1.SaveAs(Server.MapPath("EvidenciasFotograficas/" + objOrdemServicoClasse.Caminhoevidenciafotograficaum_str.Trim()));
+
+                        txtEvidenciaFotografica01.Value = objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png";
+                        hfCaminhoevidenciafotograficaum_str.Value = objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png";
+                        Session["sessiontxtEvidenciaFotografica01"] = objOrdemServicoClasse.Caminhoevidenciafotograficaum_str + ".png";
+                        lblConcluido01.Text = "Arquivo salvo com sucesso";
+                        imagemconcluido01.Visible = true;
+                        imagemerro01.Visible = false;
+                    }
+                    else
+                    {
+                        cont = cont + 1;
+                        ev1 = true;
+                        lblErro.Visible = true;
+                        lblErro.Text = "As fotos devem ser tiradas deitadas (modo paisagem)";
+                        lblErro01.Text = "Não foi possível salvar evidência fotográfica";
+                        imagemconcluido01.Visible = false;
+                        imagemerro01.Visible = true;
+
+
+                    }
+
+
+
+                }
+
+
+
+                if (fupEvidenciaFotografica2.PostedFile == null || fupEvidenciaFotografica2.PostedFile.FileName == "")
+                {
+                    if (Session["sessiontxtEvidenciaFotografica02"] == "" || Session["sessiontxtEvidenciaFotografica02"] == null)
+                    {
+                        hfCaminhoevidenciafotograficadois_str.Value = "SEMIMAGEM02.JPG";
+
+                    }
+                    else
+                    {
+                        hfCaminhoevidenciafotograficadois_str.Value = (string)Session["sessiontxtEvidenciaFotografica02"];
+
+                    }
+
+
+                    txtEvidenciaFotografica02.Value = "";
+                    lblConcluido02.Text = "";
+                    imagemconcluido02.Visible = true;
+                    imagemerro02.Visible = false;
+
+                }
+                else
+                {
+
+                    String sArqTemp = Path.GetTempPath() + fupEvidenciaFotografica2.FileName;
+                    fupEvidenciaFotografica2.SaveAs(sArqTemp);
+
+                    orientacao_bool = Orientacao(sArqTemp);
+
+                    if (orientacao_bool)
+
+                    {
+
+
+                        objOrdemServicoClasse.Caminhoevidenciafotograficadois_str = Path.GetFileNameWithoutExtension(fupEvidenciaFotografica2.PostedFile.FileName);
+
+                        HttpPostedFile pf = fupEvidenciaFotografica2.PostedFile;
+                        System.Drawing.Image bm = System.Drawing.Image.FromStream(pf.InputStream);
+
+                        String intArqLargura = bm.PhysicalDimension.Width.ToString(); // largura original
+                        String intArqAltura = bm.PhysicalDimension.Height.ToString(); // altura original
+
+
+                        int resultLargura = (Convert.ToInt32(intArqLargura) * 50) / 100;
+                        int resultAltura = (Convert.ToInt32(intArqAltura) * 50) / 100;
+
+
+                        bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                      
+                        
+                        bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficadois_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+                        //Salva o arquivo no disco
+                       // fupEvidenciaFotografica2.SaveAs(Server.MapPath("EvidenciasFotograficas/" + objOrdemServicoClasse.Caminhoevidenciafotograficadois_str.Trim()));
+
+
+
+                        txtEvidenciaFotografica02.Value = objOrdemServicoClasse.Caminhoevidenciafotograficadois_str + ".png";
+                        hfCaminhoevidenciafotograficadois_str.Value = objOrdemServicoClasse.Caminhoevidenciafotograficadois_str + ".png";
+                        Session["sessiontxtEvidenciaFotografica02"] = objOrdemServicoClasse.Caminhoevidenciafotograficadois_str + ".png";
+                        lblConcluido02.Text = "Arquivo salvo com sucesso";
+                        imagemconcluido02.Visible = true;
+                        imagemerro02.Visible = false;
+                    }
+                    else
+                    {
+                        cont = cont + 1;
+                        ev2 = true;
+                        lblErro.Visible = true;
+                        lblErro.Text = "As fotos devem ser tiradas deitadas (modo paisagem)";
+                        lblErro02.Text = "Não foi possível salvar evidência fotográfica";
+                        imagemconcluido02.Visible = false;
+                        imagemerro02.Visible = true;
+
+                    }
+
+
+
+                }
+
+
+
+                if (fupEvidenciaFotografica3.PostedFile == null || fupEvidenciaFotografica3.PostedFile.FileName == "")
+                {
+                    if (Session["sessiontxtEvidenciaFotografica03"] == "" || Session["sessiontxtEvidenciaFotografica03"] == null)
+                    {
+                        hfCaminhoevidenciafotograficatres_str.Value = "SEMIMAGEM03.JPG";
+
+                    }
+                    else
+                    {
+                        hfCaminhoevidenciafotograficatres_str.Value = (string)Session["sessiontxtEvidenciaFotografica03"];
+
+                    }
+
+                    txtEvidenciaFotografica03.Value = "";
+                    lblConcluido03.Text = "";
+                    imagemconcluido03.Visible = true;
+                    imagemerro03.Visible = false;
+                }
+                else
+                {
+
+                    String sArqTemp = Path.GetTempPath() + fupEvidenciaFotografica3.FileName;
+                    fupEvidenciaFotografica3.SaveAs(sArqTemp);
+
+                    orientacao_bool = Orientacao(sArqTemp);
+
+                    if (orientacao_bool)
+                    {
+
+                        objOrdemServicoClasse.Caminhoevidenciafotograficatres_str = Path.GetFileNameWithoutExtension(fupEvidenciaFotografica3.PostedFile.FileName);
+
+                        HttpPostedFile pf = fupEvidenciaFotografica3.PostedFile;
+                        System.Drawing.Image bm = System.Drawing.Image.FromStream(pf.InputStream);
+
+                        String intArqLargura = bm.PhysicalDimension.Width.ToString(); // largura original
+                        String intArqAltura = bm.PhysicalDimension.Height.ToString(); // altura original
+
+
+                        int resultLargura = (Convert.ToInt32(intArqLargura) * 50) / 100;
+                        int resultAltura = (Convert.ToInt32(intArqAltura) * 50) / 100;
+
+
+                        bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                      
+
+                        bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficatres_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+                        
+                        //Salva o arquivo no disco
+                       // fupEvidenciaFotografica3.SaveAs(Server.MapPath("EvidenciasFotograficas/" + objOrdemServicoClasse.Caminhoevidenciafotograficatres_str.Trim()));
+
+
+
+
+
+
+                        txtEvidenciaFotografica03.Value = objOrdemServicoClasse.Caminhoevidenciafotograficatres_str + ".png";
+                        hfCaminhoevidenciafotograficatres_str.Value = objOrdemServicoClasse.Caminhoevidenciafotograficatres_str + ".png";
+                        Session["sessiontxtEvidenciaFotografica03"] = objOrdemServicoClasse.Caminhoevidenciafotograficatres_str + ".png";
+                        lblConcluido03.Text = "Arquivo salvo com sucesso";
+                        imagemconcluido03.Visible = true;
+                        imagemerro03.Visible = false;
+                    }
+                    else
+                    {
+                        cont = cont + 1;
+                        ev3 = true;
+                        lblErro.Visible = true;
+                        lblErro.Text = "As fotos devem ser tiradas deitadas (modo paisagem)";
+                        lblErro03.Text = "Não foi possível salvar evidência fotográfica";
+                        imagemconcluido03.Visible = false;
+                        imagemerro03.Visible = true;
+
+
+                    }
+
+                }
+
+                if (fupEvidenciaFotografica4.PostedFile == null || fupEvidenciaFotografica4.PostedFile.FileName == "")
+                {
+                    if (Session["sessiontxtEvidenciaFotografica04"] == "" || Session["sessiontxtEvidenciaFotografica04"] == null)
+                    {
+                        hfCaminhoevidenciafotograficaquatro_str.Value = "SEMIMAGEM04.JPG";
+
+                    }
+                    else
+                    {
+                        hfCaminhoevidenciafotograficaquatro_str.Value = (string)Session["sessiontxtEvidenciaFotografica04"];
+
+                    }
+
+                    txtEvidenciaFotografica04.Value = "";
+                    lblConcluido04.Text = "";
+                    imagemconcluido04.Visible = true;
+                    imagemerro04.Visible = false;
+                }
+                else
+                {
+
+                    String sArqTemp = Path.GetTempPath() + fupEvidenciaFotografica4.FileName;
+                    fupEvidenciaFotografica4.SaveAs(sArqTemp);
+
+                    orientacao_bool = Orientacao(sArqTemp);
+
+                    if (orientacao_bool)
+                    {
+
+                        objOrdemServicoClasse.Caminhoevidenciafotograficaquatro_str = Path.GetFileNameWithoutExtension(fupEvidenciaFotografica4.PostedFile.FileName);
+
+                        HttpPostedFile pf = fupEvidenciaFotografica4.PostedFile;
+                        System.Drawing.Image bm = System.Drawing.Image.FromStream(pf.InputStream);
+
+                        String intArqLargura = bm.PhysicalDimension.Width.ToString(); // largura original
+                        String intArqAltura = bm.PhysicalDimension.Height.ToString(); // altura original
+
+
+                        int resultLargura = (Convert.ToInt32(intArqLargura) * 50) / 100;
+                        int resultAltura = (Convert.ToInt32(intArqAltura) * 50) / 100;
+
+
+                        bm = ResizeBitmap((Bitmap)bm, resultLargura, resultAltura); /// new width, height                      
+
+                        bm.Save(Server.MapPath("EvidenciasFotograficas/") + objOrdemServicoClasse.Caminhoevidenciafotograficaquatro_str + ".png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+                        //Salva o arquivo no disco
+                       // fupEvidenciaFotografica4.SaveAs(Server.MapPath("EvidenciasFotograficas/" + objOrdemServicoClasse.Caminhoevidenciafotograficaquatro_str.Trim()));
+
+
+
+
+                        txtEvidenciaFotografica04.Value = objOrdemServicoClasse.Caminhoevidenciafotograficaquatro_str + ".png";
+                        hfCaminhoevidenciafotograficaquatro_str.Value = objOrdemServicoClasse.Caminhoevidenciafotograficaquatro_str + ".png";
+                        Session["sessiontxtEvidenciaFotografica04"] = objOrdemServicoClasse.Caminhoevidenciafotograficaquatro_str + ".png";
+                        lblConcluido04.Text = "Arquivo salvo com sucesso";
+                        imagemconcluido04.Visible = true;
+                        imagemerro04.Visible = false;
+                    }
+                    else
+                    {
+                        cont = cont + 1;
+                        ev4 = true;
+                        lblErro.Visible = true;
+                        lblErro.Text = "As fotos devem ser tiradas deitadas (modo paisagem)";
+                        lblErro04.Text = "Não foi possível salvar evidência fotográfica";
+                        imagemconcluido04.Visible = false;
+                        imagemerro04.Visible = true;
+                    }
+
+
+
+                }
+
+
+                if (cont > 0)
+                {
+                    switch (ev1)
+                    {
+                        case true:
+
+                            lblErroModal.Visible = true;
+                            lblErroModal.Text = "Evidência fotográfica 1 deve ser tirada deitada (modo paisagem)";
+                            ScriptManager.RegisterStartupScript(this, this.GetType(), "LaunchServerSide", "$(function() { abrirJanelaModalErro(); });", true);
+                            break;
+
+
+                    }
+
+                    switch (ev2)
+                    {
+                        case true:
+
+                            lblErroModal.Visible = true;
+                            lblErroModal.Text = "Evidência fotográfica 2 deve ser tirada deitada (modo paisagem)";
+                            ScriptManager.RegisterStartupScript(this, this.GetType(), "LaunchServerSide", "$(function() { abrirJanelaModalErro(); });", true);
+                            break;
+
+
+                    }
+
+                    switch (ev3)
+                    {
+                        case true:
+
+                            lblErroModal.Visible = true;
+                            lblErroModal.Text = "Evidência fotográfica 3 deve ser tirada deitada (modo paisagem)";
+                            ScriptManager.RegisterStartupScript(this, this.GetType(), "LaunchServerSide", "$(function() { abrirJanelaModalErro(); });", true);
+                            break;
+
+
+                    }
+                    switch (ev4)
+                    {
+                        case true:
+
+                            lblErroModal.Visible = true;
+                            lblErroModal.Text = "Evidência fotográfica 4 deve ser tirada deitada (modo paisagem)";
+                            ScriptManager.RegisterStartupScript(this, this.GetType(), "LaunchServerSide", "$(function() { abrirJanelaModalErro(); });", true);
+                            break;
+
+
+                    }
+
+                }
+                else
+                {
+
+                    txtEvidenciaFotografica01.Value = (string)Session["sessiontxtEvidenciaFotografica01"];
+                    txtEvidenciaFotografica02.Value = (string)Session["sessiontxtEvidenciaFotografica02"];
+                    txtEvidenciaFotografica03.Value = (string)Session["sessiontxtEvidenciaFotografica03"];
+                    txtEvidenciaFotografica04.Value = (string)Session["sessiontxtEvidenciaFotografica04"];
+
+                    LimparSessionEvidencias();
+
+                    pnlIncluirRegistros.Visible = true;
+                    pnlEvidenciasFotograficas.Visible = false;
+
+                }
+
+
+
+
+
+            }
+
+            catch (Exception error)
+            {
+
+                lblErroModal.Visible = true;
+                lblErroModal.Text = "Não foi possível executar essa operação!";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "LaunchServerSide", "$(function() { abrirJanelaModalErro(); });", true);
+                return;
+            }
+
+
+            finally
+            {
+
+                fupEvidenciaFotografica1.Dispose();
+                fupEvidenciaFotografica2.Dispose();
+                fupEvidenciaFotografica3.Dispose();
+                fupEvidenciaFotografica4.Dispose();
+
+            }
+        }
+

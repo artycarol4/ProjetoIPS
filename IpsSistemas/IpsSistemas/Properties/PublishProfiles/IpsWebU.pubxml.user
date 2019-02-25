@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\USER\Desktop\PublicacaoIIS</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bancoipsDataSet.xsc">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="bancoipsDataSet.xss">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>02/18/2019 13:26:42</publishTime>
+    </File>
+    <File Include="bin/IpsSistemas.dll">
+      <publishTime>02/18/2019 13:40:03</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>02/18/2019 13:26:42</publishTime>
+    </File>
+    <File Include="bin/Json.dll">
+      <publishTime>02/18/2019 13:26:41</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>02/18/2019 13:26:41</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>02/18/2019 13:26:41</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>02/18/2019 13:26:41</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Cors.dll">
+      <publishTime>02/18/2019 13:26:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/18/2019 13:26:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/18/2019 13:26:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/18/2019 13:26:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/18/2019 13:26:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/18/2019 13:26:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>05/03/2016 16:01:25</publishTime>
+    </File>
+    <File Include="bin/mysql.data.dll">
+      <publishTime>04/09/2010 20:06:42</publishTime>
+    </File>
+    <File Include="bin/mysql.data.entity.dll">
+      <publishTime>04/09/2010 20:06:42</publishTime>
+    </File>
+    <File Include="bin/mysql.visualstudio.dll">
+      <publishTime>04/09/2010 20:06:48</publishTime>
+    </File>
+    <File Include="bin/mysql.web.dll">
+      <publishTime>04/09/2010 20:06:46</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/18/2019 13:26:42</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>02/18/2019 13:26:42</publishTime>
+    </File>
+    <File Include="bin/Report1.rdlc">
+      <publishTime>12/22/2018 16:01:56</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/18/2019 13:26:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>02/18/2019 13:26:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>02/18/2019 13:26:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Owin.dll">
+      <publishTime>02/18/2019 13:26:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>02/18/2019 13:26:42</publishTime>
+    </File>
+    <File Include="bin/VenturaSistemas.EnviarEmail.dll">
+      <publishTime>02/04/2019 12:09:08</publishTime>
+    </File>
+    <File Include="BootStrapp/css/bootstrap-responsive.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/css/bootstrap-scroll-modal.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/css/bootstrap-submenu.min.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/css/bootstrap-theme.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/css/bootstrap-theme.css.map">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/css/bootstrap-theme.min.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/css/bootstrap.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/css/bootstrap.css.map">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/css/bootstrap.min.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/css/font-awesome.min.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/css/largura.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/css/maius-minus.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-footable/footable.min.css.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/AUTHORS.txt">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/external/jquery/jquery.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/images/ui-icons_444444_256x240.png">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/images/ui-icons_555555_256x240.png">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/images/ui-icons_777620_256x240.png">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/images/ui-icons_777777_256x240.png">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/images/ui-icons_cc0000_256x240.png">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/images/ui-icons_ffffff_256x240.png">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/index.html">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/jquery-ui.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/jquery-ui.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/jquery-ui.min.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/jquery-ui.structure.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/LICENSE.txt">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/jquery-ui-1.12.1.custom/package.json">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/bootstrap-modal.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/bootstrap-scroll-modal.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/bootstrap-submenu.min.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/bootstrap-transition.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/bootstrap.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/bootstrap.min.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/Chart.min.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/jquery-1.10.2.min.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/jquery-1.11.1.min.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/jquery-1.8.2.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/jquery-2.0.2.min.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/jquery-3.1.1.min.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/jquery.maskedinput.min.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/jquery.mobile-1.4.3.min.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="BootStrapp/js/npm.js">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="css/altura-pixel.css">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="css/bordas.css">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="css/carregando.css">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="css/cores-style.css">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="css/espacos.css">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="css/fontes.css">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="css/login.css">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="css/rodape.css">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="gif/35.gif">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="gif/ajax-loader.gif">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="gif/barra.gif">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="img/acessoNegado.gif">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/Adicionar32x32.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/Botoes/first.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/Botoes/last.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/Botoes/next.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/Botoes/previous.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/concremat.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/Error12.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/error32.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/errorEvidenciaFoto.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/gancho.jpg">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/gancho_36x36.jpg">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/icons/AdicionarIco.ico">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/icons/favicon.ico">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/icons/icon-google.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/icons/informacaoIco.ico">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/icons/IPS.png.ico">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/icons/map-marker.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/icons/PdfIco.ico">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/icons/symbol-01.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/informacao32x32.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/IPS.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/IPSservicos.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/IPSservicos9.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/logo.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="img/logoEmail.jpg">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/logoLogin.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/logoLogin2.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/okEvidenciaFoto.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/PdfPng.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/Stop.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="img/Ventura_Sistemas_01_200X57.png">
+      <publishTime>02/18/2019 13:26:40</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/18/2019 13:26:41</publishTime>
+    </File>
+    <File Include="Site.Mobile.Master">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="Videos/GerenciarInspecoes22-11-2018.mp4">
+      <publishTime>11/22/2018 15:06:26</publishTime>
+    </File>
+    <File Include="Views/AccessoRestrito.aspx">
+      <publishTime>06/18/2018 18:01:50</publishTime>
+    </File>
+    <File Include="Views/Acessorios.aspx">
+      <publishTime>01/29/2019 13:20:08</publishTime>
+    </File>
+    <File Include="Views/AreaCliente.aspx">
+      <publishTime>01/23/2019 18:30:58</publishTime>
+    </File>
+    <File Include="Views/Client.aspx">
+      <publishTime>02/01/2019 08:57:18</publishTime>
+    </File>
+    <File Include="Views/Clientes.aspx">
+      <publishTime>02/01/2019 13:24:28</publishTime>
+    </File>
+    <File Include="Views/GerenciarInspecoes.aspx">
+      <publishTime>11/22/2018 14:05:18</publishTime>
+    </File>
+    <File Include="Views/index.aspx">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="Views/Inspetor.aspx">
+      <publishTime>06/18/2018 19:19:14</publishTime>
+    </File>
+    <File Include="Views/Login.aspx">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="Views/MontaAcessorios.aspx">
+      <publishTime>06/18/2018 19:21:12</publishTime>
+    </File>
+    <File Include="Views/OrdemServico.aspx">
+      <publishTime>06/18/2018 19:22:16</publishTime>
+    </File>
+    <File Include="Views/OrdemServicoDetalhar.aspx">
+      <publishTime>08/20/2018 11:46:00</publishTime>
+    </File>
+    <File Include="Views/OrdemServicoEditar.aspx">
+      <publishTime>12/22/2018 15:58:24</publishTime>
+    </File>
+    <File Include="Views/OrdemServicoInserido.aspx">
+      <publishTime>06/23/2018 20:49:18</publishTime>
+    </File>
+    <File Include="Views/OrdemServicoInserir.aspx">
+      <publishTime>12/22/2018 15:57:54</publishTime>
+    </File>
+    <File Include="Views/Pedidos.aspx">
+      <publishTime>08/20/2018 19:20:56</publishTime>
+    </File>
+    <File Include="Views/Principal.Master">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="Views/Relatorio.aspx">
+      <publishTime>06/19/2018 08:24:24</publishTime>
+    </File>
+    <File Include="Views/ResponsavelTecnico.aspx">
+      <publishTime>06/19/2018 08:26:56</publishTime>
+    </File>
+    <File Include="Views/Usuarios.aspx">
+      <publishTime>01/24/2019 11:04:44</publishTime>
+    </File>
+    <File Include="ViewSwitcher.ascx">
+      <publishTime>02/18/2019 13:26:39</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/18/2019 13:40:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

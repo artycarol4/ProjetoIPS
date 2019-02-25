@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="corBotao">#5a5a56</color>
+
+    <color name="corTitulo">#5a5a56</color>
+    <color name="corTexto">#9e9e9e</color>
+    <color name="corTextoCVIcone">#33b5e5</color>
+
+    <color name="fundo_fragment">#1f000000</color>
+
+    <color name="black_12">#1f000000</color>
+
+    <color name="item_selecionado_menu">#b9b6b6</color>
+
+
+    <color name="vermelhodelete">#ee626f</color>
+    <color name="vermelhoerro">#d50000</color>
+    <color name="transparent">#00000000</color>
+    <color name="entradaTexto">#9e9e9e</color>
+    <color name="branco">#ffffff</color>
+
+    <color name="dialogSuccess">#00cdb1</color>
+    <color name="dialogInfo">#33b5e5</color>
+    <color name="dialogError">#eb6874</color>
+
+    <color name="amarelo">#ffff00</color>
+</resources>

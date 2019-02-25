@@ -1,0 +1,31 @@
+﻿.fonteCinco {
+    font-size: 5px;
+}
+
+.fonteDez {
+    font-size: 10px;
+}
+
+.fonteQuinze {
+    font-size: 15px;
+}
+
+.fonteVinte {
+    font-size: 20px;
+}
+
+.fonteVinteECinco {
+    font-size: 25px;
+}
+
+.fonteTrinta {
+    font-size: 30px;
+}
+
+.fonteVermelha {
+    color: red;
+}
+
+.fonterodape {
+    font-size: 80%;
+}
