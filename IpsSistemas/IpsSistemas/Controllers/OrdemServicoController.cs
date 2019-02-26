@@ -36,7 +36,7 @@ namespace IpsSistemas.Controllers
 
             OrdemServicoApi objOrdemServicoClasse = new OrdemServicoApi();
             PedidoClasse objPedidoClasse = new PedidoClasse();
-           
+
             var response = new HttpResponseMessage();
 
             try
@@ -61,48 +61,48 @@ namespace IpsSistemas.Controllers
         [HttpPost]
         [Route("api/ordemservico/uploadimage")]
         [AllowAnonymous]
-        public MensagemData UploadImg(string image, string imagename, int status)
+        public MensagemData UploadImg(EnvioFotos data)
         {
-            
-           // string log = "";
+
+            // string log = "";
             string strPath = System.Web.HttpContext.Current.Server.MapPath("~") + "Views\\EvidenciasFotograficas\\";
             string strPathTemp = System.Web.HttpContext.Current.Server.MapPath("~") + "Views\\TEMP\\";
 
             // string strPath = System.Web.HttpContext.Current.Server.MapPath("~/Views/EvidenciasFotograficas/");
             // string strPathTemp = System.Web.HttpContext.Current.Server.MapPath("~/Views/TEMP/");
 
-            string strFileTxt = strPathTemp + imagename + ".txt";
+            string strFileTxt = strPathTemp + data.imagename + ".txt";
             try
             {
-                if (status == 1)
+                if (data.status == 1)
                 {
                     File.Delete(strFileTxt);
-                  //  log = "status " + Convert.ToString(status) + ". arquivo txt foi deletado.";
+                    //  log = "status " + Convert.ToString(status) + ". arquivo txt foi deletado.";
                 }
 
-                if (status != 3)
+                if (data.status != 3)
                 {
                     using (StreamWriter sw = new StreamWriter(strFileTxt, true))
                     {
-                        sw.Write(image);
+                        sw.Write(data.image);
                         sw.Dispose();
                         sw.Close();
                     }
-                 //  log += "status " + Convert.ToString(status) + ". arquivo txt foi escrito";
+                    //  log += "status " + Convert.ToString(status) + ". arquivo txt foi escrito";
                 }
-                else if (status == 3)
+                else if (data.status == 3)
                 {
-                    File.Delete(strPath + imagename);
+                    File.Delete(strPath + data.imagename);
                     string strImage = System.IO.File.ReadAllText(strFileTxt);
                     byte[] NewBytes = Convert.FromBase64String(strImage);
                     MemoryStream ms1 = new MemoryStream(NewBytes);
                     System.Drawing.Image NewImage = System.Drawing.Image.FromStream(ms1);
-                    NewImage.Save(strPath + imagename);
+                    NewImage.Save(strPath + data.imagename);
                     Thread.Sleep(1000);
                     File.Delete(strFileTxt);
-                  //  log = "status " + Convert.ToString(status) + ". imagem foi convertida e salva";
+                    //  log = "status " + Convert.ToString(status) + ". imagem foi convertida e salva";
                 }
-            
+
                 return new MensagemData { MSGSTATUS = MensagemData.KDStatus.kdNormal };
             }
             catch (Exception ex)
@@ -118,5 +118,11 @@ namespace IpsSistemas.Controllers
 
 
 
+    }
+    public class EnvioFotos
+    {
+        public string image { get; set; }
+        public string imagename { get; set; }
+        public int status { get; set; }
     }
 }
