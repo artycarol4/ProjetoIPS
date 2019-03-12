@@ -65,8 +65,8 @@ public class Login extends AppCompatActivity {
         llEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AbreApp();
-                /*
+                //AbreApp();
+
                 if (!Validacao()) {
                     MostraErroBar("Verifique os campos com erros.");
                 } else {
@@ -80,7 +80,7 @@ public class Login extends AppCompatActivity {
                         }
                     }
 
-                }*/
+                }
             }
         });
 

@@ -1,6 +1,7 @@
 package nadlertec.com.br.ips.service;
 
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import nadlertec.com.br.ips.R;
@@ -15,6 +16,7 @@ import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
@@ -23,6 +25,7 @@ import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
+import retrofit2.http.QueryMap;
 
 public interface GitHubService {
 
@@ -106,8 +109,7 @@ public interface GitHubService {
     interface ServiceUPLOADIMAGE {
         @Headers({ "Content-Type: application/json;charset=UTF-8"})
         @POST("ordemservico/uploadimage")
-        Call<MENSAGEM> Exec(@Query("image") String image,@Query("imagename") String imagename,
-                            @Query("status") int status,@Header("Authorization") String Authorization);
+        Call<MENSAGEM> Exec(@Body Map<String,String> options, @Header("Authorization") String Authorization);
 
         final OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .readTimeout(CONSTANT.TimeOut, TimeUnit.SECONDS)

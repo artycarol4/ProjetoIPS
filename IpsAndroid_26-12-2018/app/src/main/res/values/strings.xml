@@ -50,6 +50,7 @@
     <string name="hintCapacidade">* Capacidade</string>
     <string name="hintDimensao">* Dimensões</string>
     <string name="hintObservacao">Observação</string>
+    <string name="hintSubSetor">Sub Setor</string>
     <string name="hintContato">* Contato</string>
     <string name="hintSetor">* Setor</string>
     <string name="hintDDD">DDD</string>
@@ -75,7 +76,9 @@
     <string name="erroVerifiqueCampoErro">Verifique os campos com erros.</string>
 
     <!-- APIS -->
-    <string name="serverAPI">http://192.168.1.103:16177</string>
+    <!--<string name="serverAPI">http://gventurasistemas-001-site1.ctempurl.com</string>-->
+    <string name="serverAPI">http://www.ipsweb.com.br</string>
+    <!--<string name="serverAPI">http://192.168.0.101:16177</string>-->
     <string name="routAPI">/api/</string>
 
     <!-- ARRAY -->

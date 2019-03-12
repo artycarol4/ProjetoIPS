@@ -11,12 +11,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.andrognito.flashbar.Flashbar;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 import nadlertec.com.br.ips.R;
 import nadlertec.com.br.ips.model.MENSAGEM;
@@ -253,29 +257,40 @@ public class FragSync extends Fragment {
 
     private void SendImage(){
         if(intUpload == 1 && vImage1 != null){
-            if(intCountPart == vImage1.length){
+            if(intCountPart == 1){
                 UploadImage("",lstLaudo.get(intLaudo).Caminhoevidenciafotograficaum_str,3);
             }else{
-                UploadImage(vImage1[intCountPart],lstLaudo.get(intLaudo).Caminhoevidenciafotograficaum_str,(intCountPart == 0? 1 : 2));
+                String dataFoto = JuntarFoto(vImage1);
+                UploadImage(dataFoto,lstLaudo.get(intLaudo).Caminhoevidenciafotograficaum_str,1);
             }
+
         }else if(intUpload == 2 && vImage2 != null){
-            if(intCountPart == vImage2.length){
+
+            if(intCountPart == 1){
                 UploadImage("",lstLaudo.get(intLaudo).Caminhoevidenciafotograficadois_str,3);
             }else{
-                UploadImage(vImage2[intCountPart],lstLaudo.get(intLaudo).Caminhoevidenciafotograficadois_str,(intCountPart == 0? 1 : 2));
+                String dataFoto = JuntarFoto(vImage2);
+                UploadImage(dataFoto,lstLaudo.get(intLaudo).Caminhoevidenciafotograficadois_str,1);
             }
+
         }else if(intUpload == 3 && vImage3 != null){
-            if(intCountPart == vImage3.length){
+
+            if(intCountPart == 1){
                 UploadImage("",lstLaudo.get(intLaudo).Caminhoevidenciafotograficatres_str,3);
             }else{
-                UploadImage(vImage3[intCountPart],lstLaudo.get(intLaudo).Caminhoevidenciafotograficatres_str,(intCountPart == 0? 1 : 2));
+                String dataFoto = JuntarFoto(vImage3);
+                UploadImage(dataFoto,lstLaudo.get(intLaudo).Caminhoevidenciafotograficatres_str,1);
             }
+
         }else if(intUpload == 4 && vImage4 != null){
-            if(intCountPart == vImage4.length){
+
+            if(intCountPart == 1){
                 UploadImage("",lstLaudo.get(intLaudo).Caminhoevidenciafotograficaquatro_str,3);
             }else{
-                UploadImage(vImage4[intCountPart],lstLaudo.get(intLaudo).Caminhoevidenciafotograficaquatro_str,(intCountPart == 0? 1 : 2));
+                String dataFoto = JuntarFoto(vImage4);
+                UploadImage(dataFoto,lstLaudo.get(intLaudo).Caminhoevidenciafotograficaquatro_str,1);
             }
+
         }else{
             intCountPart = 0;
             intUpload = 0;
@@ -332,8 +347,14 @@ public class FragSync extends Fragment {
 
     private void UploadImage(String pIMAGESTR, String pIMAGENAME, final int pSTATUS){
         try{
+
+            Map<String, String> data = new HashMap<>();
+            data.put("image", pIMAGESTR);
+            data.put("imagename", pIMAGENAME);
+            data.put("status", String.valueOf(pSTATUS));
+
             GitHubService.ServiceUPLOADIMAGE execute = GitHubService.ServiceUPLOADIMAGE.retrofit.create(GitHubService.ServiceUPLOADIMAGE.class);
-            final Call<MENSAGEM> call =  execute.Exec(pIMAGESTR, pIMAGENAME,pSTATUS,"Bearer " + Main.config.TOKEN);
+            final Call<MENSAGEM> call =  execute.Exec(data,"Bearer " + Main.config.TOKEN);
             call.enqueue(new Callback<MENSAGEM>() {
                 @Override
                 public void onResponse(Call<MENSAGEM> call, Response<MENSAGEM> response) {
@@ -372,15 +393,21 @@ public class FragSync extends Fragment {
     }
 
     private void MostraResultado(){
-        String strTEMP = "";
-        tvMensagem.setText("Sincronização finalizada.");
-        pbMain.setProgress(0);
-        for(int i =0; i < lstLOG.size();i++){
-            strTEMP += lstLOG.get(i);
+
+        try {
+            String strTEMP = "";
+            tvMensagem.setText("Sincronização finalizada.");
+            pbMain.setProgress(0);
+            for(int i =0; i < lstLOG.size();i++){
+                strTEMP += lstLOG.get(i);
+            }
+            tvResultado.setText(strTEMP);
+            if(dalProgress != null)
+                dalProgress.dismiss();
+        }catch (Exception e){
+            Toast.makeText(cContext, "Deu crash", Toast.LENGTH_LONG).show();
         }
-        tvResultado.setText(strTEMP);
-        if(dalProgress != null)
-            dalProgress.dismiss();
+
     }
 
     private void PreparaAmbiente(){
@@ -417,5 +444,14 @@ public class FragSync extends Fragment {
             lstLOG.add("Laudos --> " + getString(R.string.mensagemSemConexaoWifi) + "\n");
             MostraResultado();
         }
+    }
+
+    private String JuntarFoto(String[] data){
+        String retorno = "";
+        for(int i = 0; i < data.length; i++){
+            retorno+= data[i];
+        }
+
+        return retorno;
     }
 }

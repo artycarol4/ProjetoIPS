@@ -50,7 +50,9 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import nadlertec.com.br.ips.R;
 import nadlertec.com.br.ips.model.MENSAGEM;
@@ -596,28 +598,6 @@ public class LaudoEdit extends AppCompatActivity {
 
                 PopulaAcessorio();
 
-                etMetodologia.setText("VISUAL SENSITIVA / DIMENSIONAL");
-
-/*
-
- */
-                etFab.setText("TESTEFABRI");
-                etCapacidade.setText("TESTE CAPACIDADE");
-                etContato.setText("TESTE CONTATO");
-                etDDD.setText("13");
-                etTelefone.setText("997421148");
-                etTAG.setText("TESTE TAG");
-                etSetor.setText("MANUTENÇÃO");
-                etModelo.setText("TESTE MODELO");
-                etDimensao.setText("TESTE DIMENSAO");
-
-                etCertFab.setText("TESTE CERT FAB");
-                etRegInsp.setText("TESTE REG INSP");
-                etRegRep.setText("REG RESP");
-                etRecomendacao.setText("VERIFICAR A");
-                etObservacao.setText("NÃO É POSSÍVEL");
-                etObservacao2.setText("OBS02");
-
             }else{
                 PopulaAcessorio();
                 blnEdit = true;
@@ -707,29 +687,40 @@ public class LaudoEdit extends AppCompatActivity {
 
     private void SendImage(){
         if(intUpload == 1 && vImage1 != null){
-            if(intCountPart == vImage1.length){
+            if(intCountPart == 1){
                 UploadImage("",pedido.laudo.Caminhoevidenciafotograficaum_str,3);
             }else{
-                UploadImage(vImage1[intCountPart],pedido.laudo.Caminhoevidenciafotograficaum_str,(intCountPart == 0? 1 : 2));
+                String dataFoto = JuntarFoto(vImage1);
+                UploadImage(dataFoto,pedido.laudo.Caminhoevidenciafotograficaum_str,1);
             }
+
         }else if(intUpload == 2 && vImage2 != null){
-            if(intCountPart == vImage2.length){
+
+            if(intCountPart == 1){
                 UploadImage("",pedido.laudo.Caminhoevidenciafotograficadois_str,3);
             }else{
-                UploadImage(vImage2[intCountPart],pedido.laudo.Caminhoevidenciafotograficadois_str,(intCountPart == 0? 1 : 2));
+                String dataFoto = JuntarFoto(vImage2);
+                UploadImage(dataFoto,pedido.laudo.Caminhoevidenciafotograficadois_str,1);
             }
+
         }else if(intUpload == 3 && vImage3 != null){
-            if(intCountPart == vImage3.length){
+
+            if(intCountPart == 1){
                 UploadImage("",pedido.laudo.Caminhoevidenciafotograficatres_str,3);
             }else{
-                UploadImage(vImage3[intCountPart],pedido.laudo.Caminhoevidenciafotograficatres_str,(intCountPart == 0? 1 : 2));
+                String dataFoto = JuntarFoto(vImage3);
+                UploadImage(dataFoto,pedido.laudo.Caminhoevidenciafotograficatres_str,1);
             }
+
         }else if(intUpload == 4 && vImage4 != null){
-            if(intCountPart == vImage4.length){
+
+            if(intCountPart == 1){
                 UploadImage("",pedido.laudo.Caminhoevidenciafotograficaquatro_str,3);
             }else{
-                UploadImage(vImage4[intCountPart],pedido.laudo.Caminhoevidenciafotograficaquatro_str,(intCountPart == 0? 1 : 2));
+                String dataFoto = JuntarFoto(vImage4);
+                UploadImage(dataFoto,pedido.laudo.Caminhoevidenciafotograficaquatro_str,1);
             }
+
         }else{
             intCountPart = 0;
             intUpload = 0;
@@ -779,10 +770,6 @@ public class LaudoEdit extends AppCompatActivity {
 
             if (repository.DescricaoErro.length() > 0)
                 throw new Exception("Erro: " + repository.DescricaoErro);
-
-
-
-
 
             if(Utilitario.WifiOn(acMain)){
                 dalProgress = Utilitario.openProgress(cContext);
@@ -1133,8 +1120,14 @@ public class LaudoEdit extends AppCompatActivity {
 
     private void UploadImage(String pIMAGESTR, String pIMAGENAME, final int pSTATUS){
         try{
+
+            Map<String, String> data = new HashMap<>();
+            data.put("image", pIMAGESTR);
+            data.put("imagename", pIMAGENAME);
+            data.put("status", String.valueOf(pSTATUS));
+
             GitHubService.ServiceUPLOADIMAGE execute = GitHubService.ServiceUPLOADIMAGE.retrofit.create(GitHubService.ServiceUPLOADIMAGE.class);
-            final Call<MENSAGEM> call =  execute.Exec(pIMAGESTR, pIMAGENAME,pSTATUS,"Bearer " + Main.config.TOKEN);
+            final Call<MENSAGEM> call =  execute.Exec(data,"Bearer " + Main.config.TOKEN);
             call.enqueue(new Callback<MENSAGEM>() {
                 @Override
                 public void onResponse(Call<MENSAGEM> call, Response<MENSAGEM> response) {
@@ -1308,6 +1301,15 @@ public class LaudoEdit extends AppCompatActivity {
         text.setSpan(new ForegroundColorSpan(Color.WHITE), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         supportActionBar.setTitle(text);
 
+    }
+
+    private String JuntarFoto(String[] data){
+        String retorno = "";
+        for(int i = 0; i < data.length; i++){
+            retorno+= data[i];
+        }
+
+        return retorno;
     }
 
     @Override

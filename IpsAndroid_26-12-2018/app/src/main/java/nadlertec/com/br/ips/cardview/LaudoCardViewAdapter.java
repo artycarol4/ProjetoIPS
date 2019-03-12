@@ -65,6 +65,7 @@ public class LaudoCardViewAdapter extends RecyclerView.Adapter<LaudoCardViewAdap
         private TextView tvRegReparo;
         private TextView tvRecomendacao;
 
+
         public ViewHolder(View itemView) {
             super(itemView);
 
@@ -147,7 +148,9 @@ public class LaudoCardViewAdapter extends RecyclerView.Adapter<LaudoCardViewAdap
             this.ivDeletar.setOnClickListener(new OnItemClickListener(pIndex, onItemClickCallback));
             this.ivEditar.setOnClickListener(new OnItemClickListener(pIndex, onItemClickCallback));
             this.tvEditar.setOnClickListener(new OnItemClickListener(pIndex, onItemClickCallback));
+
         }
+
     }
 
     @Override

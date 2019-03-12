@@ -838,7 +838,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="0dp"
                             android:colorControlNormal="@color/entradaTexto"
-                            android:hint="@string/hintObservacao"
+                            android:hint="@string/hintSubSetor"
                             android:textColorHint="@color/entradaTexto"
                             app:errorTextAppearance="@style/TextAppearance.Design.Error"
                             app:hintTextAppearance="@style/TextAppearance.Design.Hint">
