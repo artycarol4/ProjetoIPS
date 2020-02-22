@@ -1,0 +1,239 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:2:1-68:12
+MERGED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-26:12
+MERGED from [com.android.support:design:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/717cb017c1d64f3fe435e5a17e2fa189/AndroidManifest.xml:17:1-22:12
+MERGED from [com.andrognito.flashbar:flashbar:1.0.2] /home/gelson/.gradle/caches/transforms-1/files-1.1/flashbar-1.0.2.aar/ce392dba1abfe26f31b5a173c9b585ee/AndroidManifest.xml:2:1-11:12
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.4.2] /home/gelson/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.4.2.aar/af35af324ff068a9ff178db3e169caf6/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/066bb7b0259b98127661ee4bbb1e7b2d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/gelson/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/928c3ecfacefc0657daeae012a0d29e6/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:multidex:1.0.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/multidex-1.0.1.aar/68dfd7dc58781b9553dee15c46ce8cfc/AndroidManifest.xml:16:1-19:12
+MERGED from [:drawer] /home/gelson/.gradle/caches/transforms-1/files-1.1/drawer.aar/026fc9354431e8dc6d44a0255eee75c5/AndroidManifest.xml:17:1-29:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/b2cdaf7f3d3e901877ec782acc26ae5d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/1f7a1c8cc4cfd072902147764a746a49/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/9cb2b39b8922f311b7243910eed373e6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f9261d8244f27d656a1d68ae6cb6ff4c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/466e7300aa8b04cfd2af2fb1835ab7eb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/4dff1059554ed5a1b587eb11d84f6862/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/d24d7203226cbfac041378a60b0ba484/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/04fdb39c2fd5c583f4373a878322609b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/61a6d216c8f8e9d48703cfb7460bddc1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/86bc2756d7b6e0f9ff18c83d1b97074f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/009ce1fb4f50fa718ac1db963b21afef/AndroidManifest.xml:17:1-22:12
+MERGED from [io.reactivex:rxandroid:1.2.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/rxandroid-1.2.1.aar/0dc8487d5f981ca4f0f7c82014417f1e/AndroidManifest.xml:15:1-21:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/gelson/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/09da005d60e67bad23348f97351ab17b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/gelson/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/eee37941d7b29ed69e82112c3b39e552/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/gelson/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/0c3f5f0cc7c5916eccc4e1a6095718f7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/gelson/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/5afbc22ee02b8ab2479351832d604e8e/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:2:1-68:12
+	package
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:3:5-35
+		INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+		INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:2:1-68:12
+		INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:2:1-68:12
+		INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:6:5-80
+MERGED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:5-80
+MERGED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:6:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:7:5-81
+MERGED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:5-81
+MERGED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:8:22-76
+uses-permission#android.permission.CAMERA
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:9:5-65
+MERGED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-65
+MERGED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-65
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:9:22-62
+application
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:11:5-66:19
+MERGED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:5-24:19
+MERGED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:5-24:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/gelson/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/928c3ecfacefc0657daeae012a0d29e6/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/gelson/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/928c3ecfacefc0657daeae012a0d29e6/AndroidManifest.xml:9:5-20
+MERGED from [:drawer] /home/gelson/.gradle/caches/transforms-1/files-1.1/drawer.aar/026fc9354431e8dc6d44a0255eee75c5/AndroidManifest.xml:27:5-20
+MERGED from [:drawer] /home/gelson/.gradle/caches/transforms-1/files-1.1/drawer.aar/026fc9354431e8dc6d44a0255eee75c5/AndroidManifest.xml:27:5-20
+	android:screenOrientation
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:19:9-45
+	android:supportsRtl
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:17:9-35
+	android:label
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:15:9-41
+	android:hardwareAccelerated
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:18:9-44
+	android:roundIcon
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:16:9-54
+	android:icon
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:20:9-47
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:12:9-51
+activity#nadlertec.com.br.ips.ui.activity.Login
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:21:9-27:20
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:21:19-52
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:22:13-26:29
+action#android.intent.action.MAIN
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:25:27-74
+activity#nadlertec.com.br.ips.ui.activity.Main
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:29:9-33:20
+	android:screenOrientation
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:31:13-49
+	android:theme
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:32:13-48
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:30:13-45
+activity#nadlertec.com.br.ips.ui.activity.LaudoEdit
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:35:9-39:20
+	android:screenOrientation
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:37:13-49
+	android:theme
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:38:13-46
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:36:13-50
+activity#nadlertec.com.br.ips.ui.activity.Laudo
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:41:9-45:20
+	android:screenOrientation
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:43:13-49
+	android:theme
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:44:13-46
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:42:13-46
+activity#nadlertec.com.br.ips.ui.activity.filter.FilterOS
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:47:9-50:65
+	android:screenOrientation
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:49:13-49
+	android:theme
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:50:13-63
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:48:13-56
+activity#nadlertec.com.br.ips.ui.activity.filter.FilterLaudo
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:52:9-55:65
+	android:screenOrientation
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:54:13-49
+	android:theme
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:55:13-63
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:53:13-59
+provider#android.support.v4.content.FileProvider
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:57:9-65:20
+	android:grantUriPermissions
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:61:13-47
+	android:authorities
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:59:13-55
+	android:exported
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:60:13-37
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:58:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:62:13-64:57
+	android:resource
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:64:17-55
+	android:name
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml:63:17-67
+uses-sdk
+INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+MERGED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:design:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/717cb017c1d64f3fe435e5a17e2fa189/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/717cb017c1d64f3fe435e5a17e2fa189/AndroidManifest.xml:20:5-44
+MERGED from [com.andrognito.flashbar:flashbar:1.0.2] /home/gelson/.gradle/caches/transforms-1/files-1.1/flashbar-1.0.2.aar/ce392dba1abfe26f31b5a173c9b585ee/AndroidManifest.xml:7:5-9:41
+MERGED from [com.andrognito.flashbar:flashbar:1.0.2] /home/gelson/.gradle/caches/transforms-1/files-1.1/flashbar-1.0.2.aar/ce392dba1abfe26f31b5a173c9b585ee/AndroidManifest.xml:7:5-9:41
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.4.2] /home/gelson/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.4.2.aar/af35af324ff068a9ff178db3e169caf6/AndroidManifest.xml:8:5-10:41
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.4.2] /home/gelson/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.4.2.aar/af35af324ff068a9ff178db3e169caf6/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/066bb7b0259b98127661ee4bbb1e7b2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/066bb7b0259b98127661ee4bbb1e7b2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/gelson/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/928c3ecfacefc0657daeae012a0d29e6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/gelson/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/928c3ecfacefc0657daeae012a0d29e6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:multidex:1.0.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/multidex-1.0.1.aar/68dfd7dc58781b9553dee15c46ce8cfc/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:multidex:1.0.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/multidex-1.0.1.aar/68dfd7dc58781b9553dee15c46ce8cfc/AndroidManifest.xml:18:5-42
+MERGED from [:drawer] /home/gelson/.gradle/caches/transforms-1/files-1.1/drawer.aar/026fc9354431e8dc6d44a0255eee75c5/AndroidManifest.xml:23:5-25:41
+MERGED from [:drawer] /home/gelson/.gradle/caches/transforms-1/files-1.1/drawer.aar/026fc9354431e8dc6d44a0255eee75c5/AndroidManifest.xml:23:5-25:41
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/b2cdaf7f3d3e901877ec782acc26ae5d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/b2cdaf7f3d3e901877ec782acc26ae5d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/1f7a1c8cc4cfd072902147764a746a49/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/1f7a1c8cc4cfd072902147764a746a49/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/9cb2b39b8922f311b7243910eed373e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/9cb2b39b8922f311b7243910eed373e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f9261d8244f27d656a1d68ae6cb6ff4c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f9261d8244f27d656a1d68ae6cb6ff4c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/466e7300aa8b04cfd2af2fb1835ab7eb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/466e7300aa8b04cfd2af2fb1835ab7eb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/4dff1059554ed5a1b587eb11d84f6862/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/4dff1059554ed5a1b587eb11d84f6862/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/d24d7203226cbfac041378a60b0ba484/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/d24d7203226cbfac041378a60b0ba484/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/04fdb39c2fd5c583f4373a878322609b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/04fdb39c2fd5c583f4373a878322609b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/61a6d216c8f8e9d48703cfb7460bddc1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/61a6d216c8f8e9d48703cfb7460bddc1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/86bc2756d7b6e0f9ff18c83d1b97074f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/86bc2756d7b6e0f9ff18c83d1b97074f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/009ce1fb4f50fa718ac1db963b21afef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/009ce1fb4f50fa718ac1db963b21afef/AndroidManifest.xml:20:5-44
+MERGED from [io.reactivex:rxandroid:1.2.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/rxandroid-1.2.1.aar/0dc8487d5f981ca4f0f7c82014417f1e/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex:rxandroid:1.2.1] /home/gelson/.gradle/caches/transforms-1/files-1.1/rxandroid-1.2.1.aar/0dc8487d5f981ca4f0f7c82014417f1e/AndroidManifest.xml:19:5-43
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/gelson/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/09da005d60e67bad23348f97351ab17b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/gelson/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/09da005d60e67bad23348f97351ab17b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/gelson/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/eee37941d7b29ed69e82112c3b39e552/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/gelson/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/eee37941d7b29ed69e82112c3b39e552/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/gelson/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/0c3f5f0cc7c5916eccc4e1a6095718f7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/gelson/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/0c3f5f0cc7c5916eccc4e1a6095718f7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/gelson/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/5afbc22ee02b8ab2479351832d604e8e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/gelson/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/5afbc22ee02b8ab2479351832d604e8e/AndroidManifest.xml:20:5-44
+INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+		INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+		ADDED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+		INJECTED from /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/src/main/AndroidManifest.xml
+activity#com.theartofdev.edmodo.cropper.CropImageActivity
+ADDED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:9-23:59
+	android:screenOrientation
+		ADDED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:13-49
+	android:theme
+		ADDED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:13-56
+	android:name
+		ADDED from [:imagepicker] /home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/imagepicker/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:13-76

@@ -1,0 +1,23 @@
+#Internal package file, do not edit.
+#Sat Feb 08 14:18:42 GMT 2020
+2.base=/home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/build/intermediates/assets/debug
+0.path=classes.dex
+2.baseType=DIRECTORY
+3.base=/home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/build/intermediates/assets/debug
+2.set=ASSET
+1.path=fonts/titulobold.ttf
+4.base=/home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/build/intermediates/assets/debug
+count=5
+2.path=fonts/Roboto-Regular.ttf
+4.set=ASSET
+3.path=database.db
+3.baseType=DIRECTORY
+1.set=ASSET
+4.path=fonts/Roboto-Medium.ttf
+1.baseType=DIRECTORY
+0.base=/home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/build/intermediates/transforms/dexMerger/debug/0
+0.baseType=DIRECTORY
+3.set=ASSET
+1.base=/home/gelson/Git/IpsAndroid/IpsAndroid_01-02-2020/app/build/intermediates/assets/debug
+4.baseType=DIRECTORY
+0.set=DEX
