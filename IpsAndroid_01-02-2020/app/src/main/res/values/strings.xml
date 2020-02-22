@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">IPS</string>
+
+    <!-- PARAMETROS BASICOS DO APP -->
+    <string name="DataBaseName">database.db</string>
+    <string name="keyCONFIG">CONFIG</string>
+    <string name="fontTituloBold">fonts/titulobold.ttf</string>
+    <string name="LogCat">ips_log</string>
+    <string name="dirTMP">IPS</string>
+
+
+    <!-- NOME DOS MENUS -->
+    <string name="mnuCaptionHOME">HOME</string>
+    <string name="mnuCaptionLAUDOS">LAUDOS</string>
+    <string name="mnuCaptionSINCRONIZAR">SINCRONIZAR</string>
+
+    <!-- BOTOES -->
+    <string name="btnOK">OK</string>
+    <string name="btnGRAVAR">GRAVAR</string>
+    <string name="btnCANCELAR">CANCELAR</string>
+    <string name="btnCONTINUAR">CONTINUAR</string>
+
+    <!-- TEXTOS -->
+    <string name="txtFOTO">FOTO</string>
+    <string name="txtGALERIA">GALERIA</string>
+    <string name="txtCAMERA">CAMERA</string>
+    <string name="txtConclusaoTecnica">* Conclusão Técnica</string>
+    <string name="txtEvidencia1">Evidência 1</string>
+    <string name="txtEvidencia2">Evidência 2</string>
+    <string name="txtEvidencia3">Evidência 3</string>
+    <string name="txtEvidencia4">Evidência 4</string>
+
+    <!-- MENSAGENS DE ERRO -->
+    <string name="mensagemErroCampoObrigatorio">Campo obrigatório.</string>
+
+    <!-- MENSAGENS -->
+    <string name="mensagemBEMVINDO">BEM VINDO</string>
+    <string name="mensagemACESSAR">ACESSAR</string>
+    <string name="mensagemSincronizandoInfo">Sincronizando as informações. Por favor aguarde.</string>
+    <string name="mensagemSincFinalizado">Sincronismo finalizado.</string>
+    <string name="mensagemSemConexaoWifi">Sem conexão Wifi</string>
+    <string name="mensagemSemConexaoInternet">Sem conexão com a internet</string>
+    <!-- HINTS -->
+    <string name="hintUSUARIO">USUÁRIO</string>
+    <string name="hintSENHA">SENHA</string>
+    <string name="hintAcessorio">* Acessório</string>
+    <string name="hintTAG">* TAG</string>
+    <string name="hintFabricante">* Fabricante</string>
+    <string name="hintModelo">* Modelo</string>
+    <string name="hintCapacidade">* Capacidade</string>
+    <string name="hintDimensao">* Dimensões</string>
+    <string name="hintObservacao">Observação</string>
+    <string name="hintSubSetor">Sub Setor</string>
+    <string name="hintContato">* Contato</string>
+    <string name="hintSetor">* Setor</string>
+    <string name="hintDDD">DDD</string>
+    <string name="hintTelefone">Telefone</string>
+    <string name="hintMetodologia">* Metodologia da inspeção executada</string>
+    <string name="hintEvidencia01">Evidência fotográfica 01</string>
+    <string name="hintEvidencia02">Evidência fotográfica 02</string>
+    <string name="hintEvidencia03">Evidência fotográfica 03</string>
+    <string name="hintEvidencia04">Evidência fotográfica 04</string>
+    <string name="hintCertificadoFabricante">* Certificado do Fabricante</string>
+    <string name="hintRegistroInspecao">* Registros de Inspeção</string>
+    <string name="hintRegistroReparo">* Registros de Reparo</string>
+    <string name="hintRecomendacao">Recomendações</string>
+
+    <!-- ERROS -->
+    <string name="erroCampoObrigatorio">Campo obrigatório.</string>
+    <string name="erroObrigatorio">Obrigatório.</string>
+    <string name="erroCampoInvalido">Campo inválido.</string>
+    <string name="erroMinimo3Caracter">Minímo 3 caracteres.</string>
+    <string name="erroAcessoServidor">Erro ao tentar acessar o servidor.</string>
+    <string name="erroUsuarioIncorreto">Usuário ou senha incorretos.</string>
+    <string name="erroImagemHorizontal">A imagem deve estar na horizontal.</string>
+    <string name="erroVerifiqueCampoErro">Verifique os campos com erros.</string>
+
+    <!-- APIS -->
+    <string name="serverAPI">http://gventurasistemas-001-site1.ctempurl.com</string>
+    <!--<string name="serverAPI">http://192.168.0.101:16177</string>-->
+    <string name="routAPI">/api/</string>
+
+    <!-- ARRAY -->
+    <string-array name="ConclusaoTecnica">
+        <item></item>
+        <item>Aprovado 3 meses</item>
+        <item>Aprovado 6 meses</item>
+        <item>Aprovado 12 meses</item>
+        <item>Reprovado/Recomendações</item>
+        <item>Reprovado</item>
+    </string-array>
+
+    <string-array name="CampPesqOS">
+        <item>SELECIONE</item>
+        <item>OS</item>
+        <item>CLIENTE</item>
+        <item>INSPETOR</item>
+    </string-array>
+
+    <string-array name="CampPesqLaudo">
+        <item>SELECIONE</item>
+        <item>LAUDO</item>
+        <item>NUMERO ART</item>
+        <item>ACESSÓRIO</item>
+        <item>TAG</item>
+        <item>FABRICANTE</item>
+        <item>MODELO</item>
+        <item>EMPRESA</item>
+        <item>CNPJ</item>
+        <item>DATA CADASTRO</item>
+        <item>RESULTADO</item>
+    </string-array>
+
+</resources>
