@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.Path;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Environment;
@@ -47,12 +48,17 @@ import org.jetbrains.annotations.NotNull;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
+import java.util.stream.Stream;
 
 import nadlertec.com.br.ips.R;
 import nadlertec.com.br.ips.model.MENSAGEM;
@@ -161,6 +167,7 @@ public class LaudoEdit extends AppCompatActivity {
     String[] vImage4;
     int intUpload = 0;
     int intCountPart = 0;
+    int laudoCount = 0;
 
     String strLOG = "";
     private static boolean blnEdit = false;
@@ -802,7 +809,7 @@ public class LaudoEdit extends AppCompatActivity {
                 MostraResultado();
             }
 
-
+            pedido.saveTxt(this, laudoCount);
 
         }catch(Exception ex){
             ex.printStackTrace();
@@ -1002,14 +1009,16 @@ public class LaudoEdit extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                if(laudoCount == 0) {
+                    try{
+                        laudoCount = new File(Environment.getExternalStorageDirectory(), getString(R.string.dirTMP) + "/" + pedido.NumeroArt_str).list().length + 1;
+                    } catch (Exception e) {
+                        laudoCount = 1;
+                    }
+                }
 
-                String[] vImage;
-                File root = new File(Environment.getExternalStorageDirectory(), getString(R.string.dirTMP));
+                File root = new File(Environment.getExternalStorageDirectory(), getString(R.string.dirTMP) +"/"+pedido.NumeroArt_str+"/Laudo_"+laudoCount);
                 root.mkdirs();
-
-                String[] vFile = strFileUriImage.split("/");
-
-                File imageFile = new File(strFileUriImage);
 
                 BitmapFactory.Options opts = new BitmapFactory.Options();
                 Bitmap bitmap = BitmapFactory.decodeFile(strFileUriImage, opts);
@@ -1038,16 +1047,21 @@ public class LaudoEdit extends AppCompatActivity {
                     return;
                 }
 
-                Calendar calendar = Calendar.getInstance();
-                SimpleDateFormat mdformat = new SimpleDateFormat("ddmmyyyy_hhmmss");
-                String strFile = mdformat.format(calendar.getTime()) + "_" + vFile[vFile.length - 1];
+                Random r = new Random();
+                String alphabet = "abcdefjhigklmnopqrstuvwxyz";
+                String randomCharacters = "";
+                for (int i = 0; i < 3; i++) {
+                    randomCharacters = randomCharacters.concat(String.valueOf(alphabet.charAt(r.nextInt(alphabet.length()))));
+                }
+
+                DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss_SSS");
+                String strFile = String.format("C%s_%s.jpeg",dateFormat.format(new Date()),randomCharacters) ;
 
                 File file = new File(root, strFile);
 
                 try {
                     FileOutputStream out = new FileOutputStream(file);
-                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out);
-                    Bitmap bmTeste = bitmap;
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 70, out);
                     out.flush();
                     out.close();
 
@@ -1079,6 +1093,8 @@ public class LaudoEdit extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+
+                deleteFiles(strFileUriImage);
 
                 dalProgress.dismiss();
             }
@@ -1354,5 +1370,11 @@ public class LaudoEdit extends AppCompatActivity {
         }
 
         return true;
+    }
+
+    private void deleteFiles(String url) {
+        File delete = new File(url);
+        delete.delete();
+
     }
 }

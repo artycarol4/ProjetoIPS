@@ -412,6 +412,15 @@ public class FilePickUtils implements LifeCycleCallBackManager {
 
                     @Override
                     public void onNext(String s) {
+                        String[] splitImageUrl = imageUrl.split("/");
+                        String[] splitSUrl = s.split("/");
+                        String urlCamera =  "";
+                        for(int index = 1; index < splitSUrl.length-1; index ++) {
+                            urlCamera = urlCamera.concat("/").concat(splitSUrl[index]);
+                        }
+                        urlCamera = urlCamera.concat("/"+splitImageUrl[splitImageUrl.length-1]);
+                        File file = new File(urlCamera);
+                        file.delete();
                         onFileChoose(s);
                     }
                 });
