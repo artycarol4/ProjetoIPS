@@ -1017,7 +1017,8 @@ public class LaudoEdit extends AppCompatActivity {
                     }
                 }
 
-                File root = new File(Environment.getExternalStorageDirectory(), getString(R.string.dirTMP) +"/"+pedido.NumeroArt_str+"/Laudo_"+laudoCount);
+                String filePath = pedido.NumeroArt_str+"/Laudo_"+laudoCount;
+                File root = new File(Environment.getExternalStorageDirectory(), getString(R.string.dirTMP) +"/" + filePath);
                 root.mkdirs();
 
                 BitmapFactory.Options opts = new BitmapFactory.Options();
@@ -1068,26 +1069,30 @@ public class LaudoEdit extends AppCompatActivity {
                     switch (intEvidencia){
                         case 1:
                             vImage1 = Utilitario.BitmapToString(bitmap);
-                            pedido.laudo.Caminhoevidenciafotograficaum_str = strFile;
-                            etEvidencia1.setText(strFile);
+                            String evidenciaumPath = String.format("%s/%s", filePath, strFile);
+                            pedido.laudo.Caminhoevidenciafotograficaum_str = evidenciaumPath;
+                            etEvidencia1.setText(evidenciaumPath);
                             break;
 
                         case 2:
                             vImage2 = Utilitario.BitmapToString(bitmap);
-                            pedido.laudo.Caminhoevidenciafotograficadois_str = strFile;
-                            etEvidencia2.setText(strFile);
+                            String evidenciadoisPath = String.format("%s/%s", filePath, strFile);
+                            pedido.laudo.Caminhoevidenciafotograficadois_str = evidenciadoisPath;
+                            etEvidencia2.setText(evidenciadoisPath);
                             break;
 
                         case 3:
                             vImage3 = Utilitario.BitmapToString(bitmap);
-                            pedido.laudo.Caminhoevidenciafotograficatres_str = strFile;
-                            etEvidencia3.setText(strFile);
+                            String evidenciatresPath = String.format("%s/%s", filePath, strFile);
+                            pedido.laudo.Caminhoevidenciafotograficatres_str = evidenciatresPath;
+                            etEvidencia3.setText(evidenciatresPath);
                             break;
 
                         case 4:
                             vImage4 = Utilitario.BitmapToString(bitmap);
-                            pedido.laudo.Caminhoevidenciafotograficaquatro_str = strFile;
-                            etEvidencia4.setText(strFile);
+                            String evidenciaquatroPath = String.format("%s/%s", filePath, strFile);
+                            pedido.laudo.Caminhoevidenciafotograficaquatro_str = evidenciaquatroPath;
+                            etEvidencia4.setText(evidenciaquatroPath);
                             break;
                     }
                 } catch (IOException e) {

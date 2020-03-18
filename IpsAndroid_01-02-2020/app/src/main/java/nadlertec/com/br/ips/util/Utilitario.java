@@ -134,7 +134,7 @@ public class Utilitario {
             Bitmap bmp = BitmapFactory.decodeFile(file.getAbsolutePath());
 
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            bmp.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+            bmp.compress(Bitmap.CompressFormat.JPEG, 70, baos);
             byte[] imageBytes = baos.toByteArray();
             String encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);
 
