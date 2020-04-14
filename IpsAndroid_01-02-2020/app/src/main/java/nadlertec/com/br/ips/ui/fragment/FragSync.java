@@ -300,8 +300,13 @@ public class FragSync extends Fragment {
 
     private void SendLaudo(){
         try{
+            TBLAUDO tblaudo = lstLaudo.get(intLaudo);
+            tblaudo.Caminhoevidenciafotograficaum_str = renameUrlPhotos(tblaudo.Caminhoevidenciafotograficaum_str);
+            tblaudo.Caminhoevidenciafotograficadois_str = renameUrlPhotos(tblaudo.Caminhoevidenciafotograficadois_str);
+            tblaudo.Caminhoevidenciafotograficatres_str = renameUrlPhotos(tblaudo.Caminhoevidenciafotograficatres_str);
+            tblaudo.Caminhoevidenciafotograficaquatro_str = renameUrlPhotos(tblaudo.Caminhoevidenciafotograficaquatro_str);
             GitHubService.ServiceSENDOS execute = GitHubService.ServiceSENDOS.retrofit.create(GitHubService.ServiceSENDOS.class);
-            final Call<TBLAUDO> call =  execute.Exec(lstLaudo.get(intLaudo).JSON(), Main.config.USERNAME,"Bearer " + Main.config.TOKEN);
+            final Call<TBLAUDO> call =  execute.Exec(tblaudo.JSON(), Main.config.USERNAME,"Bearer " + Main.config.TOKEN);
             call.enqueue(new Callback<TBLAUDO>() {
                 @Override
                 public void onResponse(Call<TBLAUDO> call, Response<TBLAUDO> response) {
@@ -347,10 +352,9 @@ public class FragSync extends Fragment {
 
     private void UploadImage(String pIMAGESTR, String pIMAGENAME, final int pSTATUS){
         try{
-
             Map<String, String> data = new HashMap<>();
             data.put("image", pIMAGESTR);
-            data.put("imagename", pIMAGENAME);
+            data.put("imagename", renameUrlPhotos(pIMAGENAME));
             data.put("status", String.valueOf(pSTATUS));
 
             GitHubService.ServiceUPLOADIMAGE execute = GitHubService.ServiceUPLOADIMAGE.retrofit.create(GitHubService.ServiceUPLOADIMAGE.class);
@@ -453,5 +457,14 @@ public class FragSync extends Fragment {
         }
 
         return retorno;
+    }
+
+    private String renameUrlPhotos(String url) {
+        if(!url.isEmpty()) {
+            String[] splitImageName =  url.split("/");
+            return splitImageName[splitImageName.length-1];
+        } else {
+            return "";
+        }
     }
 }

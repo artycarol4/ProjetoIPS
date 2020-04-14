@@ -1116,6 +1116,11 @@ public class LaudoEdit extends AppCompatActivity {
     private void SendOS(){
         try{
             pedido.laudo.NumeroArt_str = pedido.NumeroArt_str;
+            pedido.laudo.Caminhoevidenciafotograficaum_str = renameUrlPhotos(pedido.laudo.Caminhoevidenciafotograficaum_str);
+            pedido.laudo.Caminhoevidenciafotograficadois_str = renameUrlPhotos(pedido.laudo.Caminhoevidenciafotograficadois_str);
+            pedido.laudo.Caminhoevidenciafotograficatres_str = renameUrlPhotos(pedido.laudo.Caminhoevidenciafotograficatres_str);
+            pedido.laudo.Caminhoevidenciafotograficaquatro_str = renameUrlPhotos(pedido.laudo.Caminhoevidenciafotograficaquatro_str);
+
             GitHubService.ServiceSENDOS execute = GitHubService.ServiceSENDOS.retrofit.create(GitHubService.ServiceSENDOS.class);
             final Call<TBLAUDO> call =  execute.Exec(pedido.laudo.JSON(), Main.config.USERNAME,"Bearer " + Main.config.TOKEN);
             call.enqueue(new Callback<TBLAUDO>() {
@@ -1160,10 +1165,9 @@ public class LaudoEdit extends AppCompatActivity {
 
     private void UploadImage(String pIMAGESTR, String pIMAGENAME, final int pSTATUS){
         try{
-
             Map<String, String> data = new HashMap<>();
             data.put("image", pIMAGESTR);
-            data.put("imagename", pIMAGENAME);
+            data.put("imagename", renameUrlPhotos(pIMAGENAME));
             data.put("status", String.valueOf(pSTATUS));
 
             GitHubService.ServiceUPLOADIMAGE execute = GitHubService.ServiceUPLOADIMAGE.retrofit.create(GitHubService.ServiceUPLOADIMAGE.class);
@@ -1381,5 +1385,14 @@ public class LaudoEdit extends AppCompatActivity {
         File delete = new File(url);
         delete.delete();
 
+    }
+
+    private String renameUrlPhotos(String url) {
+        if(!url.isEmpty()) {
+        String[] splitImageName =  url.split("/");
+        return splitImageName[splitImageName.length-1];
+        } else {
+            return "";
+        }
     }
 }
