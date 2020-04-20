@@ -48,7 +48,7 @@ public class TBOS implements Serializable {
     }
 
     public void saveTxt(Context context, int laudoCount) {
-        File file = new File(Environment.getExternalStorageDirectory(), context.getString(R.string.dirTMP) + "/" + NumeroArt_str + "/Laudo_" + laudoCount + "/Laudo_" + laudoCount + ".txt");
+        File file = new File(Environment.getExternalStorageDirectory(), context.getString(R.string.dirTMP) + "/" + NumeroPedido_str + "/Laudo_" + laudoCount + "/Laudo_" + laudoCount + ".txt");
         ArrayList<String> saveText = new ArrayList<>();
         saveText.add(String.format("Cliente: %s", Cliente_str));
         saveText.add(String.format("Responsavel técnico: %s", Responsaveltecnico_str));

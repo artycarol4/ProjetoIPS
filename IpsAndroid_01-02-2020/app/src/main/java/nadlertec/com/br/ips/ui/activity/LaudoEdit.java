@@ -1011,13 +1011,13 @@ public class LaudoEdit extends AppCompatActivity {
             public void run() {
                 if(laudoCount == 0) {
                     try{
-                        laudoCount = new File(Environment.getExternalStorageDirectory(), getString(R.string.dirTMP) + "/" + pedido.NumeroArt_str).list().length + 1;
+                        laudoCount = new File(Environment.getExternalStorageDirectory(), getString(R.string.dirTMP) + "/" + pedido.NumeroPedido_str).list().length + 1;
                     } catch (Exception e) {
                         laudoCount = 1;
                     }
                 }
 
-                String filePath = pedido.NumeroArt_str+"/Laudo_"+laudoCount;
+                String filePath = pedido.NumeroPedido_str+"/Laudo_"+laudoCount;
                 File root = new File(Environment.getExternalStorageDirectory(), getString(R.string.dirTMP) +"/" + filePath);
                 root.mkdirs();
 
